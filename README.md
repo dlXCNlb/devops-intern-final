@@ -1,6 +1,6 @@
 # DevOps Intern Final Assessment
 
-Name: Your Name
+Name: Anson
 
 Date: March 2026
 
@@ -31,16 +31,50 @@ The repository contains a simple Python script that prints a message.
 
 #### File
 
-hello.py
+hello.py & hello.sh
 
-#### Code
+#### Add execute permission for shell script
 
-print("Hello, DevOps!")
+chmod u+x hello.sh
 
 #### Run locally
 
-python hello.py
+python hello.py or ./hello.sh
 
 #### Expected output:
 
 Hello, DevOps!
+
+### 2. Linux & Scripting Basics
+
+A shell script was created to display basic system information.
+
+#### File
+
+scripts/sysinfo.sh
+
+#### Script functionality
+
+##### The script prints:
+
+Current user
+
+Current date
+
+Disk usage
+
+##### Make executable
+
+chmod u+x scripts/sysinfo.sh
+
+##### Run the script
+
+./scripts/sysinfo.sh
+
+##### Example output:
+Current User: username
+
+Current Date: Wed Mar 11
+
+Disk Usage: (system disk usage info)
+
