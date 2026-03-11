@@ -119,7 +119,26 @@ The pipeline runs automatically on every push and executes the Python script.
 
 3. Run hello.py
 
-### Badge 
+#### Badge 
 
 [![CI](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml/badge.svg)](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml)
 
+### 5. Job Deployment with Nomad
+
+A Nomad job file was created to run the Docker container.
+
+#### File
+
+nomad/hello.nomad
+
+#### Run Nomad
+
+nomad agent -dev -bind 0.0.0.0 -network-interface='{{ GetDefaultInterfaces | attr "name" }}'
+
+export NOMAD_ADDR=http://localhost:4646
+
+#### Deploy the job
+
+nomad job run nomad/hello.nomad
+
+This will start the container as a Nomad service.
