@@ -100,3 +100,23 @@ docker run user/hello
 #### Expected Output
 
 Hello, DevOps!
+
+### 4. CI/CD with GitHub Actions
+
+A CI pipeline was created using GitHub Actions.
+
+#### Workflow File Location
+
+.github/workflows/ci.yml
+
+The pipeline runs automatically on every push and executes the Python script.
+
+#### Workflow Steps
+
+1. Checkout repository
+
+2. Setup Python
+
+3. Run hello.py
+
+
