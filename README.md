@@ -53,7 +53,7 @@ A shell script was created to display basic system information.
 
 scripts/sysinfo.sh
 
-#### Script functionality
+#### Script Functionality
 
 ##### The script prints:
 
@@ -63,18 +63,40 @@ Current date
 
 Disk usage
 
-##### Make executable
+#### Make Executable
 
 chmod u+x scripts/sysinfo.sh
 
-##### Run the script
+#### Run the Script
 
 ./scripts/sysinfo.sh
 
-##### Example output:
+#### Example Output:
+
 Current User: username
 
 Current Date: Wed Mar 11
 
 Disk Usage: (system disk usage info)
 
+### 3. Docker Basics
+
+The Python script was containerized using Docker.
+
+Install Docker if not installed.
+
+#### File 
+
+Dockerfile
+
+#### Build Image
+
+docker build -t user/hello .
+
+#### Run the Container
+
+docker run user/hello
+
+#### Expected Output
+
+Hello, DevOps!
