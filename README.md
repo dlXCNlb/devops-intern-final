@@ -119,5 +119,7 @@ The pipeline runs automatically on every push and executes the Python script.
 
 3. Run hello.py
 
-### Badge [![DevOps CI Pipeline](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml/badge.svg)](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml)
+### Badge 
+
+[![CI](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml/badge.svg)](https://github.com/dlXCNlb/devops-intern-final/actions/workflows/ci.yml)
 
