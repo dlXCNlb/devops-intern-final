@@ -1,0 +1,15 @@
+Grafana Loki Setup
+
+1. Start Grafana, Loki, Promtail
+
+docker-compose up -d
+
+2. Verify Loki running
+
+curl http://localhost:3100/ready
+
+3. View logs
+
+http://localhost:3000
+
+Logs can then be queried from Loki using Grafana.

@@ -142,3 +142,13 @@ export NOMAD_ADDR=http://localhost:4646
 nomad job run nomad/hello.nomad
 
 This will start the container as a Nomad service.
+
+### 6. Monitoring with Grafana Loki
+
+Logging is configured using Grafana Loki.
+
+#### Setup
+
+Run Grafana, Loki, Promtail using docker-compose
+
+see monitoring/loki_setup.txt
